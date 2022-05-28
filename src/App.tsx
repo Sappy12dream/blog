@@ -13,7 +13,7 @@ function App() {
         {isFetching && <p>isFetching....</p>}
         {isError && <p>Something went wrong</p>}
         {isSuccess && (
-          <div className="grid grid-cols-4 gap-5 p-5 ">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 grid-cols-1 gap-5 p-5 ">
             {data?.map((post) => (
               <div key={post.id} className="bg-white p-5">
                 <span className="text-green-500"># {post?.id}</span>
